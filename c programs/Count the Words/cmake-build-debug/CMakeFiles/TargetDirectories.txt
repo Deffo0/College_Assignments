@@ -1,0 +1,3 @@
+C:/ Count the Words/cmake-build-debug/CMakeFiles/_Count_the_Words.dir
+C:/ Count the Words/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/ Count the Words/cmake-build-debug/CMakeFiles/rebuild_cache.dir

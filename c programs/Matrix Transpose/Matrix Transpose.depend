@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1606383445 source:d:\programs\ matrix transpose\main.c
+	<stdio.h>
+	<stdlib.h>
+

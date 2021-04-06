@@ -1,0 +1,3 @@
+C:\CLion-2020.3.2\bin\cmake\win\bin\cmake.exe -E rm -f CMakeFiles\_Count_the_Words.dir/objects.a
+C:\PROGRA~1\CODEBL~1\MinGW\bin\ar.exe cr CMakeFiles\_Count_the_Words.dir/objects.a @CMakeFiles\_Count_the_Words.dir\objects1.rsp
+C:\PROGRA~1\CODEBL~1\MinGW\bin\gcc.exe -g   -Wl,--whole-archive CMakeFiles\_Count_the_Words.dir/objects.a -Wl,--no-whole-archive  -o _Count_the_Words.exe -Wl,--out-implib,lib_Count_the_Words.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\_Count_the_Words.dir\linklibs.rsp

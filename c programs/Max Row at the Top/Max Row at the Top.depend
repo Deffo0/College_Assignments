@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1608277389 source:d:\programs\max row at the top\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1608280017 source:c:\max row at the top\main.c
+	<stdio.h>
+	<stdlib.h>
+

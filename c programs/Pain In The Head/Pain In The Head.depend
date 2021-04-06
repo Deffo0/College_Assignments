@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1609847738 source:c:\pain in the head\main.c
+	<stdio.h>
+	<stdlib.h>
+

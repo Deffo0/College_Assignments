@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1605803540 source:a:\programs\circular right shift\main.c
+	<stdio.h>
+	<stdlib.h>
+

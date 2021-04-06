@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1605871725 source:a:\programs\arrays union and interseciton\main.c
+	<stdio.h>
+	<stdlib.h>
+

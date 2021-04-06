@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1609787369 source:c:\ asterisks pattern\main.c
+	<stdio.h>
+	<stdlib.h>
+
