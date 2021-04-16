@@ -1,12 +1,12 @@
-Input Format
++ Input Format
 
 First line contains a comma-separated list of the board dimenstions(rows, colums). The board rows are then printed in order. Next line contains the team indetifier. Last line contains the minimum area for an element.
 
-Constraints
++ Constraints
 
 Dimensions of the photo will be between 1 and 50 elements. Minimum area for an element will be between 1 and 10000 inclusive.
 
-Output Format
++ Output Format
 
 Comma-separated list of points of team locations.
 
