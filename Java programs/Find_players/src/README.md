@@ -1,4 +1,4 @@
-+Input Format
+++Input Format
 
 First line contains a comma-separated list of the board dimenstions(rows, colums). The board rows are then printed in order. Next line contains the team indetifier. Last line contains the minimum area for an element.
 
