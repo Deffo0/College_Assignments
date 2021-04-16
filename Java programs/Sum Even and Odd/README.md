@@ -1,1 +1,1 @@
-# get the sum of the even elements and the odd elements in an integer array
++ get the sum of the even elements and the odd elements in an integers array
