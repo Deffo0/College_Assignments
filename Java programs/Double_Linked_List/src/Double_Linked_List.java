@@ -34,7 +34,7 @@ interface ILinkedList {
 }
 
 
-public class DoubleLinkedList implements ILinkedList {
+public class Double_Linked_List implements ILinkedList {
 
 
     static class Node {
@@ -230,7 +230,7 @@ public class DoubleLinkedList implements ILinkedList {
     }
 
     public ILinkedList sublist(int fromIndex, int toIndex) {
-        DoubleLinkedList res = new DoubleLinkedList();
+        Double_Linked_List res = new Double_Linked_List();
         Node p;
         if (toIndex > size - 1 || fromIndex < 0 || fromIndex > toIndex || head.getNext() == null) {
             throw new RuntimeException();
@@ -306,7 +306,7 @@ public class DoubleLinkedList implements ILinkedList {
             for (int i = 0; i < s.length; ++i)
                 arr[i] = Integer.parseInt(s[i]);
         }
-        DoubleLinkedList array = new DoubleLinkedList();
+        Double_Linked_List array = new Double_Linked_List();
         for (int j : arr) {
             array.add(j);
         }
@@ -353,8 +353,8 @@ public class DoubleLinkedList implements ILinkedList {
                 case "sublist":
                     int index5 = sc.nextInt();
                     int index6 = sc.nextInt();
-                    DoubleLinkedList sub;
-                    sub = (DoubleLinkedList) array.sublist(index5, index6);
+                    Double_Linked_List sub;
+                    sub = (Double_Linked_List) array.sublist(index5, index6);
                     sub.printLinkedList();
                     break;
                 case "contains":
