@@ -23,7 +23,7 @@ class set:
         res = [x for x in self.universe_set if x not in self.elements ]
         return res
 
-# Press the green button in the gutter to run the script.
+# the main script:
 if __name__ == '__main__':
     universe = input("Enter the universe (ex:a b c ...): ")
 
