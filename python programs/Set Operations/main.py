@@ -23,7 +23,7 @@ class set:
         res = [x for x in self.universe_set if x not in self.elements ]
         return res
 
-# Press the green button in the gutter to run the script.
+# the main script.
 if __name__ == '__main__':
     universe = input("Enter the universe (ex:a b c ...): ")
 
@@ -43,15 +43,16 @@ if __name__ == '__main__':
     no_sets = int(no_sets)
 
     container =[]
-    for i in range(no_sets):
+    i = 0
+    while i < no_sets:
         container.append(set(input("Enter the set (ex:a b c...): ").strip().split(" "),universe))
-
-        for i in container[i].elements:
-            if i not in universe:
+        for j in container[i].elements:
+            if j not in universe:
                 print("This set is not a subset from universe, enter it again.")
                 container.pop(i)
-                no_sets += 1
+                i -= 1
                 break
+        i += 1
 
     # make the user choose the operation:
     valid_operations = ["intersection","union","complement"]
