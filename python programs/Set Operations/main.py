@@ -46,11 +46,11 @@ if __name__ == '__main__':
     for i in range(no_sets):
         container.append(set(input("Enter the set (ex:a b c...): ").strip().split(" "),universe))
 
-        for i in container[i].elements:
-            if i not in universe:
+        for j in container[i].elements:
+            if j not in universe:
                 print("This set is not a subset from universe, enter it again.")
                 container.pop(i)
-                no_sets += 1
+                i -= 1
                 break
 
     # make the user choose the operation:
