@@ -54,19 +54,41 @@ if __name__ == '__main__':
                 break
         i += 1
 
-    # make the user choose the operation:
+    # loop until the user said stop:
     valid_operations = ["intersection","union","complement"]
-    operation = input("Enter the operation you want to perform on those sets (only: intersection or union or complement): ").lower()
-    while operation not in valid_operations:
-        operation = input("Invalid operation, enter the operation you want to perform on those sets (only: intersection or union or complement): ").lower()
+    stop = False
+    while not stop:
+        # make the user choose the operation:
+        operation = input("Enter the operation you want to perform on those sets (only: intersection or union or complement): ").lower()
+        while operation not in valid_operations:
+            operation = input("Invalid operation, enter the operation you want to perform on those sets (only: intersection or union or complement): ").lower()
 
-    sets = [x.elements for x in container]
-    # switch in the three operation:
-    if operation == "union":
-        print(container[0].union(sets[1:]))
-    elif operation == "intersection":
-        print(container[0].intersection(sets[1:]))
-    elif operation == "complement" and len(sets) == 1 :
-        print(container[0].complement())
-    else:
-        print("Invalid chhose of sets cooresponding to operation")
+        # make the user choose sets which he wants to apply the operation on:
+        wanted_indexes = input("Enter indexes of sets you want to apply the operation on (ex: 1 2 ...): ").strip().split(" ")
+        while not all([(x.isnumeric() and int(x) <= len(container)) for x in wanted_indexes]):
+            wanted_indexes = input(
+                "Invalid index, enter indexes of sets you want to apply the operation on (ex: 1 2 ...): ").strip().split(" ")
+        wanted_indexes = [(int(x)-1) for x in wanted_indexes]
+
+        # bring the sets upon to the entered indexes:
+        sub_container = [container[i] for i in wanted_indexes]
+        sets = [x.elements for x in sub_container]
+
+        # switch in the three operation:
+        if operation == "union":
+            print(sub_container[0].union(sets[1:]))
+        elif operation == "intersection":
+            print(sub_container[0].intersection(sets[1:]))
+        elif operation == "complement" and len(sets) == 1 :
+            print(sub_container[0].complement())
+        else:
+            print("Invalid choose of sets cooresponding to the operation")
+
+        # ask the user if he wants to continue or no:
+        decision = input("Do you want to stop? (ex: yes/no): ").strip().lower()
+        while decision != "yes" and decision != "no":
+            decision = input("Invalid input, do you want to stop? (ex: yes/no): ").strip().lower()
+        if decision == "yes":
+            stop = True
+        elif decision == "no":
+            stop = False
