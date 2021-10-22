@@ -47,7 +47,7 @@ if __name__ == '__main__':
     while i < no_sets:
         container.append(set(input("Enter the set (ex:a b c...): ").strip().split(" "),universe))
         for j in container[i].elements:
-            if j not in universe:
+            if (j not in universe and j != ""):
                 print("This set is not a subset from universe, enter it again.")
                 container.pop(i)
                 i -= 1
