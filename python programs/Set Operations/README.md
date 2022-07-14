@@ -6,8 +6,3 @@
   * Union of two sets
   * Intersection of two sets
   * Complement of a set
-## Tools:
-* OOP
-* python 
-* list as a data structure
-* vectorization
